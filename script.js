@@ -78,7 +78,7 @@ $(window).resize(function(){
 	equalheight('.height-fix');
 });
 
-// $(function() {
+$(function() {
 	var answers = document.querySelectorAll('li'),
 		results = {
 			1: {
@@ -87,7 +87,7 @@ $(window).resize(function(){
 					<p>The UK’s new pension rules will give you the freedom to access your pension pot as your choose, and could give you the flexibility you need to seize opportunities for adventure while making sure you don’t run out money too quickly. You could, for example, use an initial cash lump sum to pay for equipment or training, buy yourself a guaranteed income for life in order to cover your everyday expenses and potentially take further lump sums to travel on impulse.</p>\
 					<p>You’ll need to be careful though – the new flexibility on offer makes you responsible for making your income last. So consider speaking to a financial adviser. They can recommend which strategy best suits your circumstances, needs and goals.</p>",
 				descriptionRight: '',
-				image: ''
+				image: 'images/active_adventurer.jpg'
 			},
 			2: {
 				name: 'THE TIME-RICH VOLUNTEER',
@@ -95,14 +95,14 @@ $(window).resize(function(){
 					<p>To free up your time for volunteering, you need to think about how your various pension pots, savings and investments can be used to generate an income that will support you throughout retirement. Talking to a financial adviser will help. They’ll be able to recommend which combination of products will give you the best chance of achieving your ideal Life2 – and in which order you should use them in order to avoid paying more tax than necessary. </p>\
 					<p>For example, you may wish to withdraw money from an Individual Savings Account (ISA) to pay for everyday expenses before doing so from your pension, since withdrawals from the latter will be subject to income tax.</p>",
 				descriptionRight: '',
-				image: ''
+				image: 'images/timerich_volunteer.jpg'
 			},
 			3: {
 				name: 'THE LEGACY MAKER',
 				descriptionLeft: "<p>Life2 for you is all about family. You’ve worked hard to give your children the best start in life and now you’ve got the time to see them more often. You also want to make sure that they, and your grandchildren, will be financially secure when you’re gone. </p>\
 					<p>The new pension rules make it easier to pass on your pension wealth to future generations, but you’ll need to weigh up all your options. You could find, for example, that you are able to pass on more wealth by turning conventional wisdom on its head and releasing equity from your home before drawing from your pension. However, tax planning is highly complex and everyone’s circumstances are different, so you’ll need to consult a financial adviser to see what’s possible.</p>",
 				descriptionRight: '',
-				image: ''
+				image: 'images/legacy_maker.jpg'
 			},
 			4: {
 				name: 'THE PORTFOLIO CAREERIST',
@@ -111,7 +111,7 @@ $(window).resize(function(){
 					<p>Flexibility is one of the major benefits of the new pension rules – you can now take cash out of your pension whenever you need it. Therefore, if you want to carry on working and leave your pension untouched, you can do. It’s also possible to defer the date that you start taking the state pension, ensuring that you get a larger payout later on. Alternatively, you may wish to start drawing some of your pension initially, topping this up with income from your work. </p>\
 					<p>The more complex your Life2 is going to be, the more it makes sense to consult a financial adviser about how to take advantage of all these new possibilities, without paying more tax than necessary.</p>",
 				descriptionRight: '',
-				image: ''
+				image: 'images/portfolio_careerist.jpg'
 			},
 			5: {
 				name: 'THE MATURE ENTREPRENEUR',
@@ -119,7 +119,7 @@ $(window).resize(function(){
 					<p>Starting your own business could require a big capital outlay in the beginning, and under the new pension rules you’ll be free to take large sums from your pot at retirement. However, it’s important to bear all your circumstances in mind before making any irreversible decisions. Otherwise, you may end up paying more tax than necessary or putting yourself under unnecessary pressure to meet everyday expenses as you get older – regardless of how well the business performs. </p>\
 					<p>You’ll also need to consider how the income from your business will affect your tax position, if things go well. A financial adviser can help you plan ahead and manage the risks.</p>",
 				descriptionRight: '',
-				image: ''
+				image: 'images/mature_entrepreneur.jpg'
 			},
 			6: {
 				name: 'THE TRANQUILITY SEEKER',
@@ -127,7 +127,7 @@ $(window).resize(function(){
 					<p>Your priority is likely to be finding a stress-free way to secure a retirement income that you won’t need to check on regularly. Depending on the state of your health, you may wish to take a more flexible approach to your retirement income, making it easier to make large one-off withdrawals and pass on your retirement savings. </p>\
 					<p>If you do want the peace of mind of a guaranteed income, think about whether you’ll need this to rise in line with inflation, and whether you’d like others to benefit from continued pay-outs after you die. A financial adviser can help you weigh up the options.</p>",
 				descriptionRight: '',
-				image: ''
+				image: 'images/tranquility_seeker.jpg'
 			},
 			7: {
 				name: 'THE PASSIONATE HOBBYIST',
@@ -135,7 +135,7 @@ $(window).resize(function(){
 					<p>You may wish to use your tax-free Pension Commencement Lump Sum (PCLS) to meet the up-front costs of equipment or training. Most people with a defined contribution pension can take a PCLS worth up to 25% of their pot. And under the new pension rules it’s easier to access this sum in stages, leaving the rest of your pot invested. </p>\
 					<p>If you’re thinking of turning your hobby into a business, you’ll need to consider how any income you generate will affect your overall financial position. A financial adviser can help you keep your income tax bill to a minimum.</p>",
 				descriptionRight: '',
-				image: ''
+				image: 'images/passionate_hobbyist.jpg'
 			},
 			8: {
 				name: 'THE DETERMINED FUNDRAISER',
@@ -143,7 +143,7 @@ $(window).resize(function(){
 					<p>To raise as much money as possible for good causes, you’ll need to make sure that your own finances are sorted throughout your retirement. You could use some or all of your pension pot to buy yourself a guaranteed income stream, in which case you’ll need to decide whether the pay-outs should rise in line with inflation and/or continue to be paid to others after you die. You could also keep your pension pot invested, giving you the flexibility to take an income in retirement and make occasional larger withdrawals to pay for one-off expenses, from home extensions to once-in-a-lifetime holidays. </p>\
 					<p>A financial adviser can help you to decide which route to take, manage the risks and prevent you from paying more tax than necessary.</p>",
 				descriptionRight: '',
-				image: ''
+				image: 'images/determined_fundraiser.jpg'
 			}
 		};
 
@@ -169,10 +169,11 @@ $(window).resize(function(){
 					var result = results[calculate(array)];
 					document.querySelector('.you-got strong').innerHTML = result.name;
 					document.querySelector('.outcome-description-left').innerHTML = result.descriptionLeft;
+					document.querySelector('.outcome-image').src = result.image;
 
 					document.querySelector('.result').className += ' active';
 				}
 			}
 		});
 	}
-// });
+});

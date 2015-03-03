@@ -94,10 +94,30 @@ img {
 	font-size: 30px;
 }
 
+.shareaholic-canvas.top {
+	text-align: center;
+}
+
 .quiz {
 	font: 12px 'futura';
 	margin: 0 auto;
 	max-width: 625px;
+}
+
+.quiz h1 {
+	color: #006150;
+	font-size: 40px;
+	line-height: 1em;
+	margin: 0;
+}
+
+.quiz h1 span {
+	font-weight: normal;
+}
+
+.quiz .blurb {
+	color: #333;
+	font-size: 14px;
 }
 
 .question ul {
