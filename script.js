@@ -83,16 +83,16 @@ $(function() {
 		results = {
 			1: {
 				name: 'THE ACTIVE ADVENTURER',
-				descriptionLeft: "<p>You're not interested in putting your feet up when you retire. For you, Life2 means remaining as active as possible for as long as possible – exploring the world and challenging yourself with new physical experiences. </p>\
+				descriptionLeft: "<p>You're not interested in putting your feet up when you retire. For you, Life2 means remaining as active as possible for as long as possible &mdash; exploring the world and challenging yourself with new physical experiences. </p>\
 					<p>The UK's new pension rules will give you the freedom to access your pension pot as your choose, and could give you the flexibility you need to seize opportunities for adventure while making sure you don't run out money too quickly. You could, for example, use an initial cash lump sum to pay for equipment or training, buy yourself a guaranteed income for life in order to cover your everyday expenses and potentially take further lump sums to travel on impulse.</p>\
-					<p>You'll need to be careful though – the new flexibility on offer makes you responsible for making your income last. So consider speaking to a financial adviser. They can recommend which strategy best suits your circumstances, needs and goals.</p>",
+					<p>You'll need to be careful though &mdash; the new flexibility on offer makes you responsible for making your income last. So consider speaking to a financial adviser. They can recommend which strategy best suits your circumstances, needs and goals.</p>",
 				descriptionRight: '',
 				image: 'images/active_adventurer.jpg'
 			},
 			2: {
 				name: 'THE TIME-RICH VOLUNTEER',
-				descriptionLeft: "<p>Now that you've got more time on your hands, it's time for you to give something back. Life2 for you is about supporting good causes – whether this means doing voluntary service overseas or simply helping out at the local charity shop. </p>\
-					<p>To free up your time for volunteering, you need to think about how your various pension pots, savings and investments can be used to generate an income that will support you throughout retirement. Talking to a financial adviser will help. They'll be able to recommend which combination of products will give you the best chance of achieving your ideal Life2 – and in which order you should use them in order to avoid paying more tax than necessary. </p>\
+				descriptionLeft: "<p>Now that you've got more time on your hands, it's time for you to give something back. Life2 for you is about supporting good causes &mdash; whether this means doing voluntary service overseas or simply helping out at the local charity shop. </p>\
+					<p>To free up your time for volunteering, you need to think about how your various pension pots, savings and investments can be used to generate an income that will support you throughout retirement. Talking to a financial adviser will help. They'll be able to recommend which combination of products will give you the best chance of achieving your ideal Life2 &mdash; and in which order you should use them in order to avoid paying more tax than necessary. </p>\
 					<p>For example, you may wish to withdraw money from an Individual Savings Account (ISA) to pay for everyday expenses before doing so from your pension, since withdrawals from the latter will be subject to income tax.</p>",
 				descriptionRight: '',
 				image: 'images/timerich_volunteer.jpg'
@@ -108,15 +108,15 @@ $(function() {
 				name: 'THE PORTFOLIO CAREERIST',
 				descriptionLeft: "<p>Your Life2 is all about flexibility, freedom and making sure no two days are alike. </p>\
 					<p>Reaching retirement age doesn't mean reaching a dead stop, as far as you're concerned. It means the freedom to carry on working on your own terms, picking and choosing which jobs and activities you wish to pursue, and seizing opportunities as they arise. </p>\
-					<p>Flexibility is one of the major benefits of the new pension rules – you can now take cash out of your pension whenever you need it. Therefore, if you want to carry on working and leave your pension untouched, you can do. It's also possible to defer the date that you start taking the state pension, ensuring that you get a larger payout later on. Alternatively, you may wish to start drawing some of your pension initially, topping this up with income from your work. </p>\
+					<p>Flexibility is one of the major benefits of the new pension rules &mdash; you can now take cash out of your pension whenever you need it. Therefore, if you want to carry on working and leave your pension untouched, you can do. It's also possible to defer the date that you start taking the state pension, ensuring that you get a larger payout later on. Alternatively, you may wish to start drawing some of your pension initially, topping this up with income from your work. </p>\
 					<p>The more complex your Life2 is going to be, the more it makes sense to consult a financial adviser about how to take advantage of all these new possibilities, without paying more tax than necessary.</p>",
 				descriptionRight: '',
 				image: 'images/portfolio_careerist.jpg'
 			},
 			5: {
 				name: 'THE MATURE ENTREPRENEUR',
-				descriptionLeft: "<p>Finally, you've got the freedom to explore that business idea – the one that you thought of ages ago but never had the time or resources to build. Life2 for you is a chance to become the entrepreneur you always wanted to be.  </p>\
-					<p>Starting your own business could require a big capital outlay in the beginning, and under the new pension rules you'll be free to take large sums from your pot at retirement. However, it's important to bear all your circumstances in mind before making any irreversible decisions. Otherwise, you may end up paying more tax than necessary or putting yourself under unnecessary pressure to meet everyday expenses as you get older – regardless of how well the business performs. </p>\
+				descriptionLeft: "<p>Finally, you've got the freedom to explore that business idea &mdash; the one that you thought of ages ago but never had the time or resources to build. Life2 for you is a chance to become the entrepreneur you always wanted to be.  </p>\
+					<p>Starting your own business could require a big capital outlay in the beginning, and under the new pension rules you'll be free to take large sums from your pot at retirement. However, it's important to bear all your circumstances in mind before making any irreversible decisions. Otherwise, you may end up paying more tax than necessary or putting yourself under unnecessary pressure to meet everyday expenses as you get older &mdash; regardless of how well the business performs. </p>\
 					<p>You'll also need to consider how the income from your business will affect your tax position, if things go well. A financial adviser can help you plan ahead and manage the risks.</p>",
 				descriptionRight: '',
 				image: 'images/mature_entrepreneur.jpg'
@@ -139,7 +139,7 @@ $(function() {
 			},
 			8: {
 				name: 'THE DETERMINED FUNDRAISER',
-				descriptionLeft: "<p>You're full of energy and unafraid to take on a challenge. You also want to give all you can to good causes. So Life2 for you means taking an active role in your favourite charities – whether that means running the London Marathon or running the fête that will fund a new village hall.</p>\
+				descriptionLeft: "<p>You're full of energy and unafraid to take on a challenge. You also want to give all you can to good causes. So Life2 for you means taking an active role in your favourite charities &mdash; whether that means running the London Marathon or running the fête that will fund a new village hall.</p>\
 					<p>To raise as much money as possible for good causes, you'll need to make sure that your own finances are sorted throughout your retirement. You could use some or all of your pension pot to buy yourself a guaranteed income stream, in which case you'll need to decide whether the pay-outs should rise in line with inflation and/or continue to be paid to others after you die. You could also keep your pension pot invested, giving you the flexibility to take an income in retirement and make occasional larger withdrawals to pay for one-off expenses, from home extensions to once-in-a-lifetime holidays. </p>\
 					<p>A financial adviser can help you to decide which route to take, manage the risks and prevent you from paying more tax than necessary.</p>",
 				descriptionRight: '',
