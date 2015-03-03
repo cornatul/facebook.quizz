@@ -137,7 +137,7 @@ img {
 
 .result {
 	margin-top: 15px;
-	/*opacity: 0;*/
+	opacity: 0;
 	-webkit-transition: opacity 0.2s;
 	transition: opacity 0.2s;
 }
