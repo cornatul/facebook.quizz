@@ -1,0 +1,186 @@
+img {
+	max-width: 100%;
+}
+
+.col {
+	display: block;
+	float: left;
+	margin: 1% 1.6%;
+}
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.span_4_of_4 {
+	width: 100%;
+}
+
+.span_3_of_4 {
+	width: 65.4%;
+}
+
+.span_2_of_4 {
+	width: 43.6%;
+}
+
+.span_1_of_4 {
+	width: 21.8%;
+}
+
+@font-face {
+	font-family: 'futura';
+	src: url('fonts/Futura-Bold-webfont.eot');
+	src: url('fonts/Futura-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/Futura-Bold-webfont.woff2') format('woff2'),
+		 url('fonts/Futura-Bold-webfont.woff') format('woff'),
+		 url('fonts/Futura-Bold-webfont.ttf') format('truetype'),
+		 url('fonts/Futura-Bold-webfont.svg#futura_bookbold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'futura';
+	src: url('fonts/Futura-Light-webfont.eot');
+	src: url('fonts/Futura-Light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/Futura-Light-webfont.woff2') format('woff2'),
+		 url('fonts/Futura-Light-webfont.woff') format('woff'),
+		 url('fonts/Futura-Light-webfont.ttf') format('truetype'),
+		 url('fonts/Futura-Light-webfont.svg#futura-lightlight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('fonts/icomoon.eot?51pqfh');
+	src: url('fonts/icomoon.eot?#iefix51pqfh') format('embedded-opentype'),
+		 url('fonts/icomoon.woff?51pqfh') format('woff'),
+		 url('fonts/icomoon.ttf?51pqfh') format('truetype'),
+		 url('fonts/icomoon.svg?51pqfh#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-square-o:before {
+	content: "\f096";
+	font-size: 30px;
+}
+
+.question ul li.selected .icon-square-o:before,
+.icon-check-square:before {
+	content: "\f14a";
+	font-size: 30px;
+}
+
+.quiz {
+	font: 12px 'futura';
+	margin: 0 auto;
+	max-width: 625px;
+}
+
+.question ul {
+	margin: 0;
+	padding: 0;
+}
+
+.question ul li {
+	color: #006150;
+	cursor: pointer;
+	text-align: center;
+}
+
+.question ul li strong {
+	font-size: 14px;
+}
+
+.question ul li img,
+.height-fix div {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.height-fix {
+	margin-bottom: 5px;
+}
+
+.you-got {
+	font-size: 40px;
+	line-height: 1em;
+	margin-top: 15px;
+	color: #006150;
+}
+
+.result {
+	margin-top: 15px;
+	/*opacity: 0;*/
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+.result.active {
+	opacity: 1;
+}
+
+.result p:first-child {
+	margin-top: 0;
+}
+
+.find-out-more {
+	border: 2px solid #006150;
+	color: #006150;
+	font-size: 14px;
+	padding: 5px;
+	text-align: center;
+}
+
+.shareaholic-canvas {
+	margin-left: -15px;
+}
+
+.question ul li:before,
+.result:before {
+	background-color: #006150;
+	background-image: -webkit-linear-gradient(right, #006150, #6eab24);
+	background-image: linear-gradient(to left, #006150, #6eab24);
+	content: "";
+	display: block;
+	height: 5px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+.question ul li:after,
+.result:after {
+	background-color: #006150;
+	background-image: -webkit-linear-gradient(right, #006150, #6eab24);
+	background-image: linear-gradient(to left, #006150, #6eab24);
+	content: "";
+	display: block;
+	height: 2px;
+	width: 100%;
+}
