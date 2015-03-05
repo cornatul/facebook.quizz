@@ -181,6 +181,17 @@ img {
 	padding: 23px 0;
 }
 
+.question .list li strong {
+	display: block;
+	font-size: 16px;
+	margin-top: 3px;
+}
+
+.question .grid .icon-square-o {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
 .question .list .icon-square-o,
 .question .list .icon-check-square {
 	float: left;
@@ -200,6 +211,7 @@ img {
 }
 
 .height-fix {
+	margin-top: 10px;
 	margin-bottom: 5px;
 }
 
