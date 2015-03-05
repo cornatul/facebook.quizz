@@ -1,3 +1,14 @@
+*,
+*:after,
+*:before {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	outline: none;
+}
+
 img {
 	max-width: 100%;
 }
@@ -19,7 +30,7 @@ img {
 }
 
 .span_4_of_4 {
-	width: 100%;
+	width: 96.8%;
 }
 
 .span_3_of_4 {
@@ -27,7 +38,7 @@ img {
 }
 
 .span_2_of_4 {
-	width: 43.6%;
+	width: 46.8%;
 }
 
 .span_1_of_4 {
@@ -94,19 +105,28 @@ img {
 	font-size: 30px;
 }
 
+.play-again {
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	background-color: #006150;
+	font: bold 16px 'futura';
+}
+
 .shareaholic-canvas.top {
 	text-align: center;
 }
 
 .quiz {
-	font: 12px 'futura';
+	font: 12px 'Arial';
 	margin: 0 auto;
 	max-width: 625px;
+	position: relative;
 }
 
 .quiz h1 {
 	color: #006150;
-	font-size: 40px;
+	font: bold 40px 'futura';
 	line-height: 1em;
 	margin: 0;
 }
@@ -120,22 +140,57 @@ img {
 	font-size: 14px;
 }
 
-.question ul {
+.question {
+	opacity: 0;
+	position: absolute;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+.question.active {
+	opacity: 1;
+	z-index: 1;
+}
+
+.question .grid {
 	margin: 0;
 	padding: 0;
 }
 
-.question ul li {
+.question .grid li {
+	border-bottom: 2px solid #006150;
 	color: #006150;
 	cursor: pointer;
 	text-align: center;
 }
 
-.question ul li strong {
-	font-size: 14px;
+.question li strong {
+	font: bold 14px 'futura';
 }
 
-/*.question ul li img,*/
+.question .list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.question .list li {
+	border-bottom: 2px solid #006150;
+	color: #006150;
+	cursor: pointer;
+	padding: 23px 0;
+}
+
+.question .list .icon-square-o,
+.question .list .icon-check-square {
+	float: left;
+	margin-right: 10px;
+}
+
+.question .list div {
+	float: left;
+}
+
 .height-fix div {
 	position: relative;
 	top: 50%;
@@ -149,13 +204,14 @@ img {
 }
 
 .you-got {
-	font-size: 40px;
+	font: 40px 'futura';
 	line-height: 1em;
 	margin-top: 15px;
 	color: #006150;
 }
 
 .result {
+	border-bottom: 2px solid #006150;
 	margin-top: 15px;
 	opacity: 0;
 	-webkit-transition: opacity 0.2s;
@@ -164,6 +220,16 @@ img {
 
 .result.active {
 	opacity: 1;
+	position: relative;
+	z-index: 1;
+}
+
+.result .outcome-description-right {
+	margin-top: 1em;
+}
+
+.result p {
+	font-size: 14px;
 }
 
 .result p:first-child {
@@ -173,7 +239,7 @@ img {
 .find-out-more {
 	border: 2px solid #006150;
 	color: #006150;
-	font-size: 14px;
+	font: 14px 'futura';
 	padding: 5px;
 	text-align: center;
 }
@@ -182,7 +248,8 @@ img {
 	margin-left: -15px;
 }
 
-.question ul li:before,
+.question .grid li:before,
+.question .list:before,
 .result:before {
 	background-color: #006150;
 	background-image: -webkit-linear-gradient(right, #006150, #6eab24);
@@ -191,16 +258,5 @@ img {
 	display: block;
 	height: 5px;
 	margin-bottom: 5px;
-	width: 100%;
-}
-
-.question ul li:after,
-.result:after {
-	background-color: #006150;
-	background-image: -webkit-linear-gradient(right, #006150, #6eab24);
-	background-image: linear-gradient(to left, #006150, #6eab24);
-	content: "";
-	display: block;
-	height: 2px;
 	width: 100%;
 }

@@ -79,6 +79,10 @@ $(window).resize(function(){
 });
 
 $(function() {
+	$('.play-again').click(function() {
+		window.location.href = window.location.href;
+	});
+
 	var answers = document.querySelectorAll('li'),
 		results = {
 			1: {
@@ -149,7 +153,8 @@ $(function() {
 
 	for(i = 0; i < answers.length; ++i) {
 		answers[i].addEventListener('click', function() {
-			var answers = document.querySelectorAll('li.selected');
+			var that = this,
+				answers = document.querySelectorAll('li.selected');
 
 			if(document.querySelectorAll('.question').length != answers.length) {
 				var children = this.parentNode.children;
@@ -174,6 +179,13 @@ $(function() {
 					document.querySelector('.result').className += ' active';
 				}
 			}
+
+			setTimeout(function() {
+				var question = that.parentNode.parentNode;
+
+				question.className = question.className.replace(new RegExp('(^|\\b)' + 'active'.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+				question.nextElementSibling.className += ' active';
+			}, 100);
 		});
 	}
 });
