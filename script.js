@@ -83,71 +83,74 @@ $(function() {
 		window.location.href = window.location.href;
 	});
 
+	if(window.location.search != '?ref')
+		$('.referrer').attr('style', 'display: none;');
+
 	var answers = document.querySelectorAll('li'),
 		results = {
 			1: {
 				name: 'THE ACTIVE ADVENTURER',
-				descriptionLeft: "<p>You're not interested in putting your feet up when you retire. For you, Life2 means remaining as active as possible for as long as possible &mdash; exploring the world and challenging yourself with new physical experiences. </p>\
-					<p>The UK's new pension rules will give you the freedom to access your pension pot as your choose, and could give you the flexibility you need to seize opportunities for adventure while making sure you don't run out money too quickly. You could, for example, use an initial cash lump sum to pay for equipment or training, buy yourself a guaranteed income for life in order to cover your everyday expenses and potentially take further lump sums to travel on impulse.</p>\
-					<p>You'll need to be careful though &mdash; the new flexibility on offer makes you responsible for making your income last. So consider speaking to a financial adviser. They can recommend which strategy best suits your circumstances, needs and goals.</p>",
+				descriptionLeft: "<p>Swimming with sharks? Tick. Abseiling from the Empire State Building? Tick. Slowing down and putting your feet up in retirement? Never! You'd much rather explore the world and challenge yourself throughout your Life2.</p>\
+				<p>The new pension rules will give you complete control over you retirement savings, so you could vary your income throughout your retirement &mdash; withdrawing a lot in some years to seek out exotic adventures abroad, and less in others to minimise your income tax bill.</p>\
+				<p>However, you'll need to be careful &mdash; the new flexibility on offer makes you responsible for making your income last. So consider speaking to a financial adviser. They can recommend which strategy best suits your circumstances, needs and goals, while making sure you don't pay more tax than necessary.</p>",
 				descriptionRight: '',
-				image: 'images/active_adventurer.jpg'
+				image: 'images/outcomes/active_adventurer.jpg'
 			},
 			2: {
 				name: 'THE TIME-RICH VOLUNTEER',
-				descriptionLeft: "<p>Now that you've got more time on your hands, it's time for you to give something back. Life2 for you is about supporting good causes &mdash; whether this means doing voluntary service overseas or simply helping out at the local charity shop. </p>\
-					<p>To free up your time for volunteering, you need to think about how your various pension pots, savings and investments can be used to generate an income that will support you throughout retirement. Talking to a financial adviser will help. They'll be able to recommend which combination of products will give you the best chance of achieving your ideal Life2 &mdash; and in which order you should use them in order to avoid paying more tax than necessary. </p>\
-					<p>For example, you may wish to withdraw money from an Individual Savings Account (ISA) to pay for everyday expenses before doing so from your pension, since withdrawals from the latter will be subject to income tax.</p>",
+				descriptionLeft: "<p>Good causes need good people to volunteer their time. Now your 9-to-5 is over, you've got the chance to muck in and make a difference. So why not use your Life2 to change the lives of others for the better?</p>\
+				<p>Whether you're doing voluntary service overseas or simply helping out at the local charity shop, you'll need to think about how your various pension pots, savings and investments can be used to generate an income that lasts. The average Briton now spend more than 30 years in retirement, so if you're thinking of taking advantage of the new pension freedoms, you'll need to avoid spending too much of your pot too soon.</p>\
+				<p>Talking to a financial adviser will help. They'll be able to recommend which combination of products you should use &mdash; and the order in which you should use them &mdash; to cover your expenses and make sure you don't pay more tax than necessary.</p>",
 				descriptionRight: '',
-				image: 'images/timerich_volunteer.jpg'
+				image: 'images/outcomes/timerich_volunteer.jpg'
 			},
 			3: {
 				name: 'THE LEGACY MAKER',
-				descriptionLeft: "<p>Life2 for you is all about family. You've worked hard to give your children the best start in life and now you've got the time to see them more often. You also want to make sure that they, and your grandchildren, will be financially secure when you're gone. </p>\
-					<p>The new pension rules make it easier to pass on your pension wealth to future generations, but you'll need to weigh up all your options. You could find, for example, that you are able to pass on more wealth by turning conventional wisdom on its head and releasing equity from your home before drawing from your pension. However, tax planning is highly complex and everyone's circumstances are different, so you'll need to consult a financial adviser to see what's possible.</p>",
+				descriptionLeft: "<p>Family comes first. You've survived the teething, tantrums and teens. Now you've got the chance to help your children through the minefields of adult life. Retirement will give you the freedom to spend much more time with those you love, and it could allow you to pass on more wealth than you thought possible. </p>\
+				<p>The new pension rules will make it much easier to pass on your pension wealth to children, grandchildren and others. However, you'll need to make sure your own expenses are covered throughout retirement &mdash; which could last 30 years or more &mdash; before you commit any wealth to the next generation.</p>\
+				<p>Also, tax-planning is highly complex and everyone's circumstances are different, so you'll need to consult a financial adviser to see what's possible.</p>",
 				descriptionRight: '',
-				image: 'images/legacy_maker.jpg'
+				image: 'images/outcomes/legacy_maker.jpg'
 			},
 			4: {
 				name: 'THE PORTFOLIO CAREERIST',
-				descriptionLeft: "<p>Your Life2 is all about flexibility, freedom and making sure no two days are alike. </p>\
-					<p>Reaching retirement age doesn't mean reaching a dead stop, as far as you're concerned. It means the freedom to carry on working on your own terms, picking and choosing which jobs and activities you wish to pursue, and seizing opportunities as they arise. </p>\
-					<p>Flexibility is one of the major benefits of the new pension rules &mdash; you can now take cash out of your pension whenever you need it. Therefore, if you want to carry on working and leave your pension untouched, you can do. It's also possible to defer the date that you start taking the state pension, ensuring that you get a larger payout later on. Alternatively, you may wish to start drawing some of your pension initially, topping this up with income from your work. </p>\
-					<p>The more complex your Life2 is going to be, the more it makes sense to consult a financial adviser about how to take advantage of all these new possibilities, without paying more tax than necessary.</p>",
+				descriptionLeft: "<p>Complete freedom is the goal of the Portfolio Careerist. You may not be ready to stop work, but you want to pick and choose which jobs to do. And you want to give more time to golf, good causes or any other great opportunity that comes your way.</p>\
+				<p>Flexibility is one of the major benefits of the new pension rules &mdash; you can now take cash out of your pension whenever you need it. So if you want to carry on working, you can control your income much more easily, to meet big expenses or make sure you don't move unexpectedly into a higher tax-band.</p>\
+				<p>But remember: the more complex your Life2, the more it makes sense to consult a financial adviser about how to take advantage of the new rules without paying more tax than necessary.</p>",
 				descriptionRight: '',
-				image: 'images/portfolio_careerist.jpg'
+				image: 'images/outcomes/portfolio_careerist.jpg'
 			},
 			5: {
 				name: 'THE MATURE ENTREPRENEUR',
-				descriptionLeft: "<p>Finally, you've got the freedom to explore that business idea &mdash; the one that you thought of ages ago but never had the time or resources to build. Life2 for you is a chance to become the entrepreneur you always wanted to be.  </p>\
-					<p>Starting your own business could require a big capital outlay in the beginning, and under the new pension rules you'll be free to take large sums from your pot at retirement. However, it's important to bear all your circumstances in mind before making any irreversible decisions. Otherwise, you may end up paying more tax than necessary or putting yourself under unnecessary pressure to meet everyday expenses as you get older &mdash; regardless of how well the business performs. </p>\
-					<p>You'll also need to consider how the income from your business will affect your tax position, if things go well. A financial adviser can help you plan ahead and manage the risks.</p>",
+				descriptionLeft: "<p>You could have been the next Richard Branson or Anita Roddick, with better luck. So why not use Life2 to explore your entrepreneurial impulses? You've got the time. You've got the resources. And you're in good company: retirees are starting businesses faster than any other age group in the UK. </p>\
+				<p>Under the new pension rules, you'll have the freedom to take as much as you want from your pension pot. So you could use a large lump sum to start your own business. However, it's important to bear all your circumstances in mind before making any irreversible decisions. Otherwise, you may put yourself under pressure to meet everyday expenses as you get older. </p>\
+				<p>You'll also need to consider how the income from your business will affect your tax position, if things go well. A financial adviser can help you plan ahead and manage the risks.</p>",
 				descriptionRight: '',
-				image: 'images/mature_entrepreneur.jpg'
+				image: 'images/outcomes/mature_entrepreneur.jpg'
 			},
 			6: {
 				name: 'THE TRANQUILITY SEEKER',
-				descriptionLeft: "<p>Peace, quiet and plenty of rest. You've worked hard all your life, and now comes the reward. Whether you're jetting off to an exotic yoga retreat or simply staying at home and turning off the phone, you've earned your Life2 of leisure.</p>\
-					<p>Your priority is likely to be finding a stress-free way to secure a retirement income that you won't need to check on regularly. Depending on the state of your health, you may wish to take a more flexible approach to your retirement income, making it easier to make large one-off withdrawals and pass on your retirement savings. </p>\
-					<p>If you do want the peace of mind of a guaranteed income, think about whether you'll need this to rise in line with inflation, and whether you'd like others to benefit from continued pay-outs after you die. A financial adviser can help you weigh up the options.</p>",
+				descriptionLeft: "<p>No more phonecalls. No more e-mail. And certainly no more stress. You've earned a Life2 of leisure, so put your feet up and relax. Or jet off to a desert island to reconnect with your inner self. Your choice.</p>\
+				<p>If tranquility is your priority than you'll probably want to finance your retirement in the most stress-free way possible. That could mean securing a guaranteed income for life or it could mean taking advantage of the new pension rules to leave your options completely open, dipping into your pension savings as and when you need them. </p>\
+				<p>The choices are many and various so, to give yourself complete peace of mind, you may want to consult a financial adviser.</p>",
 				descriptionRight: '',
-				image: 'images/tranquility_seeker.jpg'
+				image: 'images/outcomes/tranquility_seeker.jpg'
 			},
 			7: {
 				name: 'THE PASSIONATE HOBBYIST',
-				descriptionLeft: "<p>Life2 for you is about devoting as much time as possible to the things you really enjoy. Whether you intend to indulge your passion for painting or become a Master Scuba Diver, you've finally got the time to sharpen your skills and see how far you can really take your creativity.</p>\
-					<p>You may wish to use your tax-free Pension Commencement Lump Sum (PCLS) to meet the up-front costs of equipment or training. Most people with a defined contribution pension can take a PCLS worth up to 25% of their pot. And under the new pension rules it's easier to access this sum in stages, leaving the rest of your pot invested. </p>\
-					<p>If you're thinking of turning your hobby into a business, you'll need to consider how any income you generate will affect your overall financial position. A financial adviser can help you keep your income tax bill to a minimum.</p>",
+				descriptionLeft: "<p>Write that novel. Record that album. Buy a Harley Davidson and scare the hell out of your whole village. Whatever your passion, you've now got the time and resources to make the most of it.</p>\
+				<p>If you're thinking of devoting your Life2 to hobbies and interests, you may want to take cash lump sums out of your pension at various times, to buy new kit, go on training courses or take your newfound skills on tour. Under the new pension rules, you'll have complete control over your retirement savings. </p>\
+				<p>Just remember that your pot needs to cover your everyday expenses throughout your retirement, which could last 30 years or more. You may want to consult a financial adviser, who can recommend the right strategy for you while making sure you don't pay any more tax than necessary.</p>",
 				descriptionRight: '',
-				image: 'images/passionate_hobbyist.jpg'
+				image: 'images/outcomes/passionate_hobbyist.jpg'
 			},
 			8: {
 				name: 'THE DETERMINED FUNDRAISER',
-				descriptionLeft: "<p>You're full of energy and unafraid to take on a challenge. You also want to give all you can to good causes. So Life2 for you means taking an active role in your favourite charities &mdash; whether that means running the London Marathon or running the fête that will fund a new village hall.</p>\
-					<p>To raise as much money as possible for good causes, you'll need to make sure that your own finances are sorted throughout your retirement. You could use some or all of your pension pot to buy yourself a guaranteed income stream, in which case you'll need to decide whether the pay-outs should rise in line with inflation and/or continue to be paid to others after you die. You could also keep your pension pot invested, giving you the flexibility to take an income in retirement and make occasional larger withdrawals to pay for one-off expenses, from home extensions to once-in-a-lifetime holidays. </p>\
-					<p>A financial adviser can help you to decide which route to take, manage the risks and prevent you from paying more tax than necessary.</p>",
+				descriptionLeft: "<p>Running, climbing, sailing, skiing. The bigger the challenge, the better &mdash; especially when there's a good cause involved. You've always been energetic, and now you've got a lot more time on your hands. So why not spend your Life2 laughing in the face of old age, and raising money for the causes you care about?</p>\
+				<p>To help others, you need to make sure your finances are sorted first, and in retirement that means taking the next 30 years in account. The new pension rules will let you take as much as you want from your retirement savings, while leaving the rest invested, but you may want to leave a contingency fund in place in case your good health doesn't last.</p>\
+				<p>For complete peace of mind, talk to a financial adviser, who can steer you around the pitfalls and recommend a plan that suits your circumstances, needs and goals &mdash; all while making sure you don't pay more tax than necessary.</p>",
 				descriptionRight: '',
-				image: 'images/determined_fundraiser.jpg'
+				image: 'images/outcomes/determined_fundraiser.jpg'
 			}
 		};
 
@@ -167,7 +170,8 @@ $(function() {
 				var answers = document.querySelectorAll('li.selected'),
 					array = [];
 
-				if(document.querySelectorAll('.question').length == answers.length) {
+				// if(document.querySelectorAll('.question').length == answers.length) { // This is breaking
+				if($('.question').length == $('li.selected').length) {
 					for(i = 0; i < answers.length; ++i)
 						array.push(answers[i].getAttribute('data-type'));
 					

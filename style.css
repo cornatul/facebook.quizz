@@ -251,9 +251,11 @@ img {
 .find-out-more {
 	border: 2px solid #006150;
 	color: #006150;
+	display: block;
 	font: 14px 'futura';
 	padding: 5px;
 	text-align: center;
+	text-decoration: none;
 }
 
 .shareaholic-canvas {
