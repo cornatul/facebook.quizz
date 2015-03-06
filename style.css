@@ -126,9 +126,9 @@ img {
 
 .quiz h1 {
 	color: #006150;
-	font: bold 40px 'futura';
+	font: bold 50px 'futura';
 	line-height: 1em;
-	margin: 0;
+	margin: 15px 0 0;
 }
 
 .quiz h1 span {
@@ -262,6 +262,7 @@ img {
 	margin-left: -15px;
 }
 
+.quiz:before,
 .question .grid li:before,
 .question .list:before,
 .result:before {
