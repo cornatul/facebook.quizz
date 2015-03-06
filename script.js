@@ -189,6 +189,8 @@ $(function() {
 
 				question.className = question.className.replace(new RegExp('(^|\\b)' + 'active'.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
 				question.nextElementSibling.className += ' active';
+
+				$(window).scrollTop($('.question').position().top);
 			}, 100);
 		});
 	}

@@ -141,14 +141,14 @@ img {
 }
 
 .question {
-	opacity: 0;
+	visibility: hidden;
 	position: absolute;
-	-webkit-transition: opacity 0.2s;
-	transition: opacity 0.2s;
+	/*-webkit-transition: opacity 0.2s;*/
+	/*transition: opacity 0.2s;*/
 }
 
 .question.active {
-	opacity: 1;
+	visibility: visible;
 	z-index: 1;
 }
 
@@ -198,9 +198,9 @@ img {
 	margin-right: 10px;
 }
 
-.question .list div {
+/*.question .list div {
 	float: left;
-}
+}*/
 
 .height-fix div {
 	position: relative;
@@ -215,6 +215,16 @@ img {
 	margin-bottom: 5px;
 }
 
+.break-word {
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
 .you-got {
 	font: 40px 'futura';
 	line-height: 1em;
@@ -225,18 +235,23 @@ img {
 .result {
 	border-bottom: 2px solid #006150;
 	margin-top: 15px;
-	opacity: 0;
-	-webkit-transition: opacity 0.2s;
-	transition: opacity 0.2s;
+	visibility: hidden;
+	/*-webkit-transition: opacity 0.2s;*/
+	/*transition: opacity 0.2s;*/
 }
 
 .result.active {
-	opacity: 1;
+	visibility: visible;
 	position: relative;
 	z-index: 1;
 }
 
+.result .outcome-description-left,
 .result .outcome-description-right {
+	float: right;
+}
+
+.result .referrer {
 	margin-top: 1em;
 }
 
@@ -274,4 +289,31 @@ img {
 	height: 5px;
 	margin-bottom: 5px;
 	width: 100%;
+}
+
+@media only screen and (max-width : 767px) {
+	.quiz h1,
+	.you-got {
+		font-size: 30px;
+	}
+
+	.question li strong {
+		font-size: 10px;
+	}
+
+	.question .list li strong {
+		font-size: 14px;
+	}
+
+	.share-container,
+	.result .outcome-description-left,
+	.result .outcome-description-right {
+		float: none;
+		width: 96.8%;
+	}
+
+	.find-out-more-container,
+	.play-again {
+		width: 46.8%;
+	}
 }
