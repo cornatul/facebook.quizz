@@ -91,8 +91,8 @@ $(function() {
 			1: {
 				name: 'THE ACTIVE ADVENTURER',
 				descriptionLeft: "<p>Swimming with sharks? Tick. Abseiling from the Empire State Building? Tick. Slowing down and putting your feet up in retirement? Never! You'd much rather explore the world and challenge yourself throughout your Life2.</p>\
-				<p>The new pension rules will give you complete control over you retirement savings, so you could vary your income throughout your retirement &mdash; withdrawing a lot in some years to seek out exotic adventures abroad, and less in others to minimise your income tax bill.</p>\
-				<p>However, you'll need to be careful &mdash; the new flexibility on offer makes you responsible for making your income last. So consider speaking to a financial adviser. They can recommend which strategy best suits your circumstances, needs and goals, while making sure you don't pay more tax than necessary.</p>",
+				<p>The new pension rules will give you complete control over you retirement savings, so you could vary your income throughout your retirement &ndash; withdrawing a lot in some years to seek out exotic adventures abroad, and less in others to minimise your income tax bill.</p>\
+				<p>However, you'll need to be careful &ndash; the new flexibility on offer makes you responsible for making your income last. So consider speaking to a financial adviser. They can recommend which strategy best suits your circumstances, needs and goals, while making sure you don't pay more tax than necessary.</p>",
 				descriptionRight: '',
 				image: 'images/outcomes/active_adventurer.jpg'
 			},
@@ -100,14 +100,14 @@ $(function() {
 				name: 'THE TIME-RICH VOLUNTEER',
 				descriptionLeft: "<p>Good causes need good people to volunteer their time. Now your 9-to-5 is over, you've got the chance to muck in and make a difference. So why not use your Life2 to change the lives of others for the better?</p>\
 				<p>Whether you're doing voluntary service overseas or simply helping out at the local charity shop, you'll need to think about how your various pension pots, savings and investments can be used to generate an income that lasts. The average Briton now spend more than 30 years in retirement, so if you're thinking of taking advantage of the new pension freedoms, you'll need to avoid spending too much of your pot too soon.</p>\
-				<p>Talking to a financial adviser will help. They'll be able to recommend which combination of products you should use &mdash; and the order in which you should use them &mdash; to cover your expenses and make sure you don't pay more tax than necessary.</p>",
+				<p>Talking to a financial adviser will help. They'll be able to recommend which combination of products you should use &ndash; and the order in which you should use them &ndash; to cover your expenses and make sure you don't pay more tax than necessary.</p>",
 				descriptionRight: '',
 				image: 'images/outcomes/timerich_volunteer.jpg'
 			},
 			3: {
 				name: 'THE LEGACY MAKER',
 				descriptionLeft: "<p>Family comes first. You've survived the teething, tantrums and teens. Now you've got the chance to help your children through the minefields of adult life. Retirement will give you the freedom to spend much more time with those you love, and it could allow you to pass on more wealth than you thought possible. </p>\
-				<p>The new pension rules will make it much easier to pass on your pension wealth to children, grandchildren and others. However, you'll need to make sure your own expenses are covered throughout retirement &mdash; which could last 30 years or more &mdash; before you commit any wealth to the next generation.</p>\
+				<p>The new pension rules will make it much easier to pass on your pension wealth to children, grandchildren and others. However, you'll need to make sure your own expenses are covered throughout retirement &ndash; which could last 30 years or more &ndash; before you commit any wealth to the next generation.</p>\
 				<p>Also, tax-planning is highly complex and everyone's circumstances are different, so you'll need to consult a financial adviser to see what's possible.</p>",
 				descriptionRight: '',
 				image: 'images/outcomes/legacy_maker.jpg'
@@ -115,7 +115,7 @@ $(function() {
 			4: {
 				name: 'THE PORTFOLIO CAREERIST',
 				descriptionLeft: "<p>Complete freedom is the goal of the Portfolio Careerist. You may not be ready to stop work, but you want to pick and choose which jobs to do. And you want to give more time to golf, good causes or any other great opportunity that comes your way.</p>\
-				<p>Flexibility is one of the major benefits of the new pension rules &mdash; you can now take cash out of your pension whenever you need it. So if you want to carry on working, you can control your income much more easily, to meet big expenses or make sure you don't move unexpectedly into a higher tax-band.</p>\
+				<p>Flexibility is one of the major benefits of the new pension rules &ndash; you can now take cash out of your pension whenever you need it. So if you want to carry on working, you can control your income much more easily, to meet big expenses or make sure you don't move unexpectedly into a higher tax-band.</p>\
 				<p>But remember: the more complex your Life2, the more it makes sense to consult a financial adviser about how to take advantage of the new rules without paying more tax than necessary.</p>",
 				descriptionRight: '',
 				image: 'images/outcomes/portfolio_careerist.jpg'
@@ -146,9 +146,9 @@ $(function() {
 			},
 			8: {
 				name: 'THE DETERMINED FUNDRAISER',
-				descriptionLeft: "<p>Running, climbing, sailing, skiing. The bigger the challenge, the better &mdash; especially when there's a good cause involved. You've always been energetic, and now you've got a lot more time on your hands. So why not spend your Life2 laughing in the face of old age, and raising money for the causes you care about?</p>\
+				descriptionLeft: "<p>Running, climbing, sailing, skiing. The bigger the challenge, the better &ndash; especially when there's a good cause involved. You've always been energetic, and now you've got a lot more time on your hands. So why not spend your Life2 laughing in the face of old age, and raising money for the causes you care about?</p>\
 				<p>To help others, you need to make sure your finances are sorted first, and in retirement that means taking the next 30 years in account. The new pension rules will let you take as much as you want from your retirement savings, while leaving the rest invested, but you may want to leave a contingency fund in place in case your good health doesn't last.</p>\
-				<p>For complete peace of mind, talk to a financial adviser, who can steer you around the pitfalls and recommend a plan that suits your circumstances, needs and goals &mdash; all while making sure you don't pay more tax than necessary.</p>",
+				<p>For complete peace of mind, talk to a financial adviser, who can steer you around the pitfalls and recommend a plan that suits your circumstances, needs and goals &ndash; all while making sure you don't pay more tax than necessary.</p>",
 				descriptionRight: '',
 				image: 'images/outcomes/determined_fundraiser.jpg'
 			}
