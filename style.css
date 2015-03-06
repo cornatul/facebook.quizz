@@ -1,0 +1,319 @@
+*,
+*:after,
+*:before {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.col {
+	display: block;
+	float: left;
+	margin: 1% 1.6%;
+}
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.span_4_of_4 {
+	width: 96.8%;
+}
+
+.span_3_of_4 {
+	width: 65.4%;
+}
+
+.span_2_of_4 {
+	width: 46.8%;
+}
+
+.span_1_of_4 {
+	width: 21.8%;
+}
+
+@font-face {
+	font-family: 'futura';
+	src: url('fonts/Futura-Bold-webfont.eot');
+	src: url('fonts/Futura-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/Futura-Bold-webfont.woff2') format('woff2'),
+		 url('fonts/Futura-Bold-webfont.woff') format('woff'),
+		 url('fonts/Futura-Bold-webfont.ttf') format('truetype'),
+		 url('fonts/Futura-Bold-webfont.svg#futura_bookbold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'futura';
+	src: url('fonts/Futura-Light-webfont.eot');
+	src: url('fonts/Futura-Light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/Futura-Light-webfont.woff2') format('woff2'),
+		 url('fonts/Futura-Light-webfont.woff') format('woff'),
+		 url('fonts/Futura-Light-webfont.ttf') format('truetype'),
+		 url('fonts/Futura-Light-webfont.svg#futura-lightlight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('fonts/icomoon.eot?51pqfh');
+	src: url('fonts/icomoon.eot?#iefix51pqfh') format('embedded-opentype'),
+		 url('fonts/icomoon.woff?51pqfh') format('woff'),
+		 url('fonts/icomoon.ttf?51pqfh') format('truetype'),
+		 url('fonts/icomoon.svg?51pqfh#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-square-o:before {
+	content: "\f096";
+	font-size: 30px;
+}
+
+.question ul li.selected .icon-square-o:before,
+.icon-check-square:before {
+	content: "\f14a";
+	font-size: 30px;
+}
+
+.play-again {
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	background-color: #006150;
+	font: bold 16px 'futura';
+}
+
+.shareaholic-canvas.top {
+	text-align: center;
+}
+
+.quiz {
+	font: 12px 'Arial';
+	margin: 0 auto;
+	max-width: 625px;
+	position: relative;
+}
+
+.quiz h1 {
+	color: #006150;
+	font: bold 50px 'futura';
+	line-height: 1em;
+	margin: 15px 0 0;
+}
+
+.quiz h1 span {
+	font-weight: normal;
+}
+
+.quiz .blurb {
+	color: #333;
+	font-size: 14px;
+}
+
+.question {
+	visibility: hidden;
+	position: absolute;
+	/*-webkit-transition: opacity 0.2s;*/
+	/*transition: opacity 0.2s;*/
+}
+
+.question.active {
+	visibility: visible;
+	z-index: 1;
+}
+
+.question .grid {
+	margin: 0;
+	padding: 0;
+}
+
+.question .grid li {
+	border-bottom: 2px solid #006150;
+	color: #006150;
+	cursor: pointer;
+	text-align: center;
+}
+
+.question li strong {
+	font: bold 14px 'futura';
+}
+
+.question .list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.question .list li {
+	border-bottom: 2px solid #006150;
+	color: #006150;
+	cursor: pointer;
+	padding: 23px 0;
+}
+
+.question .list li strong {
+	display: block;
+	font-size: 16px;
+	margin-top: 3px;
+}
+
+.question .grid .icon-square-o {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.question .list .icon-square-o,
+.question .list .icon-check-square {
+	float: left;
+	margin-right: 10px;
+}
+
+/*.question .list div {
+	float: left;
+}*/
+
+.height-fix div {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.height-fix {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.break-word {
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+.you-got {
+	font: 40px 'futura';
+	line-height: 1em;
+	margin-top: 15px;
+	color: #006150;
+}
+
+.result {
+	border-bottom: 2px solid #006150;
+	margin-top: 15px;
+	visibility: hidden;
+	/*-webkit-transition: opacity 0.2s;*/
+	/*transition: opacity 0.2s;*/
+}
+
+.result.active {
+	visibility: visible;
+	position: relative;
+	z-index: 1;
+}
+
+.result .outcome-description-left,
+.result .outcome-description-right {
+	float: right;
+}
+
+.result .referrer {
+	margin-top: 1em;
+}
+
+.result p {
+	font-size: 14px;
+}
+
+.result p:first-child {
+	margin-top: 0;
+}
+
+.find-out-more {
+	border: 2px solid #006150;
+	color: #006150;
+	display: block;
+	font: 14px 'futura';
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.shareaholic-canvas {
+	margin-left: -15px;
+}
+
+.quiz:before,
+.question .grid li:before,
+.question .list:before,
+.result:before {
+	background-color: #006150;
+	background-image: -webkit-linear-gradient(right, #006150, #6eab24);
+	background-image: linear-gradient(to left, #006150, #6eab24);
+	content: "";
+	display: block;
+	height: 5px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+@media only screen and (max-width : 767px) {
+	.quiz h1,
+	.you-got {
+		font-size: 30px;
+	}
+
+	.question li strong {
+		font-size: 10px;
+	}
+
+	.question .list li strong {
+		font-size: 14px;
+	}
+
+	.share-container,
+	.result .outcome-description-left,
+	.result .outcome-description-right {
+		float: none;
+		width: 96.8%;
+	}
+
+	.find-out-more-container,
+	.play-again {
+		width: 46.8%;
+	}
+}
