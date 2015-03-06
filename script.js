@@ -220,6 +220,18 @@ $(function() {
 						.addClass('addthis_sharing_toolbox');
 
 					addthis.layers.refresh();
+
+					setTimeout(function() {
+						$('.at-svc-facebook').click(function() {
+							window.open(
+								'https://www.facebook.com/dialog/feed?redirect_uri=' + escape('http://life2quiz.com') + '&display=popup&app_id=1567315213523309&link=' + escape('http://life2quiz.com') + '&picture=' + escape('http://life2quiz.com/' + result.image) + '&name=' + escape(result.shareTitle) + '&description=' + escape(result.shareSummary),
+								'_blank',
+								'height=400,menubar=no,status=no,toolbar=no,titlebar=no,width=800'
+							);
+
+							return false; 
+						});
+					}, 1000);
 				}
 			}
 
