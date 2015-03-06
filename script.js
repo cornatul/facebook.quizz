@@ -1,17 +1,17 @@
-(function() {
-	var shr = document.createElement('script');
-	shr.setAttribute('data-cfasync', 'false');
-	shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
-	shr.type = 'text/javascript'; shr.async = 'true';
-	shr.onload = shr.onreadystatechange = function() {
-		var rs = this.readyState;
-		if (rs && rs != 'complete' && rs != 'loaded') return;
-		var site_id = '69277f5fd90a2c7b052116ebd5bc9e3e';
-		try { Shareaholic.init(site_id); } catch (e) {}
-	};
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(shr, s);
-})();
+// (function() {
+// 	var shr = document.createElement('script');
+// 	shr.setAttribute('data-cfasync', 'false');
+// 	shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
+// 	shr.type = 'text/javascript'; shr.async = 'true';
+// 	shr.onload = shr.onreadystatechange = function() {
+// 		var rs = this.readyState;
+// 		if (rs && rs != 'complete' && rs != 'loaded') return;
+// 		var site_id = '69277f5fd90a2c7b052116ebd5bc9e3e';
+// 		try { Shareaholic.init(site_id); } catch (e) {}
+// 	};
+// 	var s = document.getElementsByTagName('script')[0];
+// 	s.parentNode.insertBefore(shr, s);
+// })();
 
 function calculate(array) {
 	if(array.length == 0)
@@ -198,14 +198,13 @@ $(function() {
 
 					document.querySelector('.result').className += ' active';
 
-					$('.result .shareaholic-canvas')
+					$('.result .share-canvas')
 						.attr('data-title', result.shareTitle)
 						.attr('data-image', 'http://life2quiz.com/' + result.image)
-						.attr('data-summary', result.shareSummary)
-						.attr('data-app', 'share_buttons')
-						.attr('data-app-id', "15959617");
+						.attr('data-description', result.shareSummary)
+						.addClass('addthis_sharing_toolbox');
 
-					Shareaholic.init_apps()
+					addthis.layers.refresh();
 				}
 			}
 
