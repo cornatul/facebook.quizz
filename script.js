@@ -1,17 +1,18 @@
-// (function() {
-// 	var shr = document.createElement('script');
-// 	shr.setAttribute('data-cfasync', 'false');
-// 	shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
-// 	shr.type = 'text/javascript'; shr.async = 'true';
-// 	shr.onload = shr.onreadystatechange = function() {
-// 		var rs = this.readyState;
-// 		if (rs && rs != 'complete' && rs != 'loaded') return;
-// 		var site_id = '69277f5fd90a2c7b052116ebd5bc9e3e';
-// 		try { Shareaholic.init(site_id); } catch (e) {}
-// 	};
-// 	var s = document.getElementsByTagName('script')[0];
-// 	s.parentNode.insertBefore(shr, s);
-// })();
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1567315213523309',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
 
 function calculate(array) {
 	if(array.length == 0)
@@ -78,7 +79,20 @@ $(window).resize(function(){
 	equalheight('.height-fix');
 });
 
+// RESULTS
 $(function() {
+	setTimeout(function() {
+		$('.at-svc-facebook').click(function() {
+			window.open(
+				'https://www.facebook.com/dialog/feed?redirect_uri=' + escape('http://life2quiz.com') + '&display=popup&app_id=1567315213523309&link=' + escape('http://life2quiz.com') + '&picture=' + escape('http://life2quiz.com/images/outcomes/active_adventurer.jpg') + '&name=' + escape('Which Life2 could you lead?') + '&description=' + escape("Retirement has changed forever. It's no longer the closing of a book but the start of a new chapter - or 'Life2', as we like to call it. With the UK's new pension freedoms, the possibilities are endless. So which Life2 could you lead? Take our quiz to find out."),
+				'_blank',
+				'height=400,menubar=no,status=no,toolbar=no,titlebar=no,width=800'
+			);
+
+			return false; 
+		});
+	}, 1000);
+
 	$('.play-again').click(function() {
 		window.location.href = window.location.href;
 	});
@@ -201,6 +215,7 @@ $(function() {
 					$('.result .share-canvas')
 						.attr('data-title', result.shareTitle)
 						.attr('data-image', 'http://life2quiz.com/' + result.image)
+						.attr('data-url', 'http://life2quiz.com')
 						.attr('data-description', result.shareSummary)
 						.addClass('addthis_sharing_toolbox');
 
