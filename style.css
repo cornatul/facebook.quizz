@@ -317,3 +317,10 @@ img {
 		width: 46.8%;
 	}
 }
+
+
+.img-bottom-logo{
+    width:70%;
+    float:right;
+    position:relative;
+}
