@@ -95,7 +95,7 @@ $(function() {
 
 			return false; 
 		});
-	}, 1000);
+	}, 200);
 
 	$('.play-again').click(function() {
 		window.location.href = window.location.href;
@@ -240,7 +240,7 @@ $(function() {
 
 							return false;
 						});
-					}, 1000);
+					}, 200);
 				}
 			}
 
