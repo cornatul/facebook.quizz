@@ -326,9 +326,11 @@ p.center{
 
 
 .img-bottom-logo{
-    width:70%;
-    float:right;
-    position:relative;
+    float: right;
+    margin: 0;
+    padding-top: 15.9%;
+    position: relative;
+    width: 70%;
 }
 
 .UIActionLinks{
