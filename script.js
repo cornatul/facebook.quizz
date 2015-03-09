@@ -1,10 +1,10 @@
 ///changed the fb id added my developer tools
 window.fbAsyncInit = function() {
     FB.init({
-      ///appId      : '1567315213523309',
+
         appId      : '627126750752913',
         status     : true,
-      xfbml      : true,
+        xfbml      : true,
        ////ive changed from version 2.2 to ver 2.0
       version    : 'v2.2'
     });
@@ -90,7 +90,7 @@ $(function() {
 			window.open(
 				'https://www.facebook.com/dialog/feed?redirect_uri=' + escape('http://life2quiz.com') + '&display=popup&app_id=627126750752913&link=' + escape('http://life2quiz.com') + '&picture=' + escape('http://life2quiz.com/images/outcomes/active_adventurer.jpg') + '&name=' + escape('Which Life2 could you lead?') + '&description=' + escape("Retirement has changed forever. It's no longer the closing of a book but the start of a new chapter - or 'Life2', as we like to call it. With the UK's new pension freedoms, the possibilities are endless. So which Life2 could you lead? Take our quiz to find out."),
 				'_blank',
-				'height=400,menubar=no,status=no,toolbar=no,titlebar=no,width=800'
+				'height=600,menubar=yes,status=yes,toolbar=no,titlebar=no,width=800'
 			);
 
 			return false; 
@@ -227,13 +227,18 @@ $(function() {
 
 					setTimeout(function() {
 						$('.at-svc-facebook').click(function() {
-							window.open(
+
+
+
+
+
+                            window.open(
 								'https://www.facebook.com/dialog/feed?redirect_uri=http://life2quiz.com&display=popup&app_id=627126750752913&link=http://life2quiz.com&picture=' + escape('http://life2quiz.com/' + result.image) + '&name=' + escape(result.shareTitle) + '&description=' + escape(result.shareSummary),
 								'_blank',
-								'height=400,menubar=no,status=no,toolbar=no,titlebar=no,width=800'
+                                'height=600,menubar=yes,status=yes,toolbar=no,titlebar=no,width=800'
 							);
 
-							return false; 
+							return false;
 						});
 					}, 1000);
 				}
